@@ -2,37 +2,90 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  padding: 15px;
+  /* font-family: sans-serif; */
+  background-color: rgb(251, 222, 227);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto; 
+  /* margin for left and right */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-title{
+  text-align: center;
+  color:black;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.text-left {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-right {
+  text-align: right;
+}
+
+.textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 4px;
+  height: 100px;
+  border-radius: 4px;
+  border: none;
+}
+
+.post-btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color:  rgb(251, 208, 227);
+  border: none;
+  font-weight: 600;  
+  cursor: pointer;
+  margin-right: 300px;
+}
+
+.update-area {
+  padding: 12px 10px 8px 10px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 4px;
+  /* margin-bottom: 22px; */
+}
+
+.alert-info {
+  font-weight: 700;
+}
+
+.delbtn{
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color:  rgb(251, 208, 227);
+  cursor: pointer;
+  border: none;
+  font-weight: 600;  
+}
+
+.message{
+  text-align: left;
+  padding:  16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+  background-color:  rgb(197, 197, 197);
+}
+
+.delMsg{
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  color: rgb(43, 41, 41);
+  display: inline-block;
+  cursor: pointer;
 }
